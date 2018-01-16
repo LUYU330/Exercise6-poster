@@ -1,0 +1,143 @@
+body{
+  background: #a52a2a;
+  font-family:Helvetica, sans-serif;
+}
+.redrectg{
+  width:80px;
+  height:400px;
+  background: #800000;
+  opacity: 0.7;
+  float:left;
+  margin:7px;
+  mix-blend-mode: multiply;
+  position: relative;
+  top:20px;
+}
+.blackrectg{
+  width:80px;
+  height:400px;
+  background: black;
+  opacity: 0.7;
+  float:left;
+  margin:7px;
+  mix-blend-mode: multiply;
+  position: relative;
+  top:250px;
+}
+#allrectg{
+  transform: rotate(45deg);
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+#text{
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+    margin-top: 500px;
+}
+.left{
+    float:left;
+}
+h1{
+  font-size:2rem;
+  font-weight:300px;
+}
+.second{
+  float:left;
+}
+h2{
+  margin-top: 100px;
+  font-size:0.7rem;
+  font-weight:100px;
+  line-height: 3.5;
+}
+.middle{
+  float:left;
+  margin-top:40px;
+  margin-left:10px;
+}
+.right{
+  float:left;
+}
+h3{
+  font-size:0.7rem;
+  font-weight: 100px;
+  line-height:1.5;
+  margin-top: 55px;
+  margin-left: 10px;
+}
+
+
+div:nth-child(4){
+animation-name: stretch;
+animation-duration: 2s;
+animation-timing-function:linear;
+animation-delay: 0;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-fill-mode: none;
+animation-play-state: running;
+}
+@keyframes stretch {
+  0% {
+    transform: scaleY(.5);
+    background-color: black;
+    opacity: 0.5;
+  }
+  25% {
+    transform:scaley(1);
+    background-color: black;
+  }
+  50% {
+    transform:scaley(1.5);
+    background-color:	#b22222;
+  }
+  75% {
+    transform:scaley(2);
+    background-color:		#8b0000;
+  }
+  100% {
+    transform: scaley(2.5);
+    background-color:#800000;
+  }
+}
+div:nth-child(5){
+  animation-name: stretch2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes stretch2 {
+  0% {
+    transform: scaley(.5);
+    background-color: 	#b22222;
+  }
+  25% {
+    transform:scaley(1);
+    background-color: #800000;
+  }
+  50% {
+    transform:scaley(1.5);
+    background-color: 	#8b0000;
+  }
+  75% {
+    transform:scaley(2);
+    background-color: black;
+    opacity: 0.5;
+  }
+  100% {
+    transform: scaley(2.5);
+    background-color: black;
+  }
+}
